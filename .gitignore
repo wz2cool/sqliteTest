@@ -63,3 +63,4 @@ package-lock.json
 
 bin
 obj
+/.vs/SqliteTest
