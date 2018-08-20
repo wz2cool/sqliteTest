@@ -183,5 +183,12 @@ namespace SqliteTest
         {
             DbService.Instance.Init();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            string json = "{'sqlExpression': 'SELECT * FROM users WHERE (id=? AND name=?)', params: [1, 'test']}";
+            var value = JsonConvert.DeserializeObject<SqlTemplate>(json);
+            DbService.Instance.GetSqliteTemplateWrapper(value);
+        }
     }
 }

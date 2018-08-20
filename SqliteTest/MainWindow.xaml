@@ -13,6 +13,7 @@
 
             <Button Content="Init Db Service" Click="InitDbService_Click" />
             <Button Content="AAA" Click="Button_Click_2" />
+            <Button Content="Serialize test" Click="Button_Click_3" />
         </StackPanel>
     </Grid>
 </Window>
